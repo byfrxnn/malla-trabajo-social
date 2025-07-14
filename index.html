@@ -3,125 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Malla Curricular Interactiva - Trabajo Social</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Malla Curricular Trabajo Social</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Malla Curricular - Trabajo Social</h1>
-    
-    <!-- Primer Año -->
-    <section class="year-section">
-      <h2>Primer Año</h2>
-      
-      <div class="semester">
-        <h3>Semestre I</h3>
-        <div class="course" id="course1" onclick="toggleCourse('course1', [])">Taller de desarrollo socio-personal</div>
-        <div class="course" id="course2" onclick="toggleCourse('course2', [])">Fundamentos del Trabajo Social</div>
-        <div class="course" id="course3" onclick="toggleCourse('course3', [])">Procesos psicosociales I</div>
-        <div class="course" id="course4" onclick="toggleCourse('course4', [])">Antropología sociocultural</div>
-        <div class="course" id="course5" onclick="toggleCourse('course5', [])">Historia social contemporánea</div>
-        <div class="course" id="course6" onclick="toggleCourse('course6', [])">Fundamentos epistemológicos de las ciencias sociales</div>
-      </div>
-      
-      <div class="semester">
-        <h3>Semestre II</h3>
-        <div class="course" id="course7" onclick="toggleCourse('course7', [])">Taller de habilidades profesionales</div>
-        <div class="course" id="course8" onclick="toggleCourse('course8', [])">Estadística social</div>
-        <div class="course" id="course9" onclick="toggleCourse('course9', ['course8'])">Procesos psicosociales II</div>
-        <div class="course" id="course10" onclick="toggleCourse('course10', [])">Ética profesional del Trabajo Social</div>
-        <div class="course" id="course11" onclick="toggleCourse('course11', [])">Estado y Sociedad</div>
-        <div class="course" id="course12" onclick="toggleCourse('course12', ['course10'])">Teorías sociales</div>
-      </div>
-    </section>
-
-    <!-- Segundo Año -->
-    <section class="year-section">
-      <h2>Segundo Año</h2>
-      <!-- Semestre I -->
-      <div class="semester">
-        <h3>Semestre I</h3>
-        <div class="course" id="course13" onclick="toggleCourse('course13', ['course12'])">Teoría y método del Trabajo Social</div>
-        <div class="course" id="course14" onclick="toggleCourse('course14', ['course7'])">Taller de aproximación a la realidad social</div>
-        <div class="course" id="course15" onclick="toggleCourse('course15', ['course8'])">Metodología de investigación social I</div>
-        <div class="course" id="course16" onclick="toggleCourse('course16', [])">Economía Social</div>
-        <div class="course" id="course17" onclick="toggleCourse('course17', [])">Epistemología del Trabajo Social</div>
-      </div>
-      <!-- Semestre II -->
-      <div class="semester">
-        <h3>Semestre II</h3>
-        <div class="course" id="course18" onclick="toggleCourse('course18', ['course13'])">Teoría y método del Trabajo Social II</div>
-        <div class="course" id="course19" onclick="toggleCourse('course19', ['course16'])">Estructura social y desigualdad social</div>
-        <div class="course" id="course20" onclick="toggleCourse('course20', ['course15'])">Metodología de investigación social II</div>
-        <div class="course" id="course21" onclick="toggleCourse('course21', [])">Contextos jurídicos para la intervención social</div>
-        <div class="course" id="course22" onclick="toggleCourse('course22', ['course14'])">Taller de pedagogía social</div>
-      </div>
-    </section>
-
-    <!-- Tercer Año -->
-    <section class="year-section">
-      <h2>Tercer Año</h2>
-      <!-- Semestre I -->
-      <div class="semester">
-        <h3>Semestre I</h3>
-        <div class="course" id="course23" onclick="toggleCourse('course23', ['course18'])">Intervención social</div>
-        <div class="course" id="course24" onclick="toggleCourse('course24', ['course19'])">Planificación social</div>
-        <div class="course" id="course25" onclick="toggleCourse('course25', ['course19'])">Redes sociales e intersectorialidad</div>
-        <div class="course" id="course26" onclick="toggleCourse('course26', [])">Interculturalidad y colectivos sociales</div>
-        <div class="course" id="course27" onclick="toggleCourse('course27', ['course24'])">Políticas públicas</div>
-        <div class="course" id="course28" onclick="toggleCourse('course28', ['course23', 'course25'])">Práctica Integrada</div>
-      </div>
-      <!-- Semestre II -->
-      <div class="semester">
-        <h3>Semestre II</h3>
-        <div class="course" id="course29" onclick="toggleCourse('course29', ['course20'])">Taller integrado de investigación social</div>
-        <div class="course" id="course30" onclick="toggleCourse('course30', ['course28'])">Práctica integrada II</div>
-        <div class="course" id="course31" onclick="toggleCourse('course31', [])">Geografía social</div>
-        <div class="course" id="course32" onclick="toggleCourse('course32', ['course27'])">Políticas sociales y gestión social</div>
-        <div class="course" id="course33" onclick="toggleCourse('course33', ['course23'])">Análisis de la cuestión social</div>
-        <div class="course" id="course34" onclick="toggleCourse('course34', [])">Derechos humanos</div>
-      </div>
-    </section>
-
-    <!-- Cuarto Año -->
-    <section class="year-section">
-      <h2>Cuarto Año</h2>
-      <!-- Semestre I -->
-      <div class="semester">
-        <h3>Semestre I</h3>
-        <div class="course" id="course35" onclick="toggleCourse('course35', ['course32'])">Cambio social y organización social</div>
-        <div class="course" id="course36" onclick="toggleCourse('course36', ['course33'])">Electivo de análisis regional I</div>
-        <div class="course" id="course37" onclick="toggleCourse('course37', ['course33', 'course36'])">Seminario de investigación social I</div>
-        <div class="course" id="course38" onclick="toggleCourse('course38', ['course37'])">Proyectos sociales I</div>
-        <div class="course" id="course39" onclick="toggleCourse('course39', ['course37'])">Desafíos de la actuación profesional de Trabajo Social</div>
-      </div>
-      <!-- Semestre II -->
-      <div class="semester">
-        <h3>Semestre II</h3>
-        <div class="course" id="course40" onclick="toggleCourse('course40', ['course36'])">Electivo de análisis regional II</div>
-        <div class="course" id="course41" onclick="toggleCourse('course41', ['course38'])">Proyectos sociales II</div>
-        <div class="course" id="course42" onclick="toggleCourse('course42', ['course38'])">Seminario de investigación social II</div>
-        <div class="course" id="course43" onclick="toggleCourse('course43', ['course41'])">Trabajo Social y mundo laboral</div>
-      </div>
-    </section>
-
-    <!-- Quinto Año -->
-    <section class="year-section">
-      <h2>Quinto Año</h2>
-      <!-- Semestre I -->
-      <div class="semester">
-        <h3>Semestre I</h3>
-        <div class="course" id="course44" onclick="toggleCourse('course44', ['course41'])">Taller de título I</div>
-        <div class="course" id="course45" onclick="toggleCourse('course45', ['course41'])">Práctica Profesional I</div>
-      </div>
-      <!-- Semestre II -->
-      <div class="semester">
-        <h3>Semestre II</h3>
-        <div class="course" id="course46" onclick="toggleCourse('course46', ['course44'])">Taller de título II</div>
-        <div class="course" id="course47" onclick="toggleCourse('course47', ['course45'])">Práctica profesional II</div>
-      </div>
-    </section>
-  </div>
+  <h1>Malla Curricular - Trabajo Social</h1>
+  <div id="malla" class="grid"></div>
 
   <script src="script.js"></script>
 </body>
