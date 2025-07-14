@@ -9,4 +9,3 @@ function toggleCourse(courseId, prerequisites) {
     alert('No puedes aprobar este ramo aún. Asegúrate de haber aprobado los ramos previos.');
   }
 }
-
