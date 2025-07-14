@@ -1,68 +1,62 @@
-/* Estilos generales */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* style.css */
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f0fa;
+  margin: 0;
   padding: 20px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+  color: #333;
 }
 
 h1 {
-  color: #6a4c9c;
-  margin-bottom: 20px;
-}
-
-.year-section {
-  margin: 40px 0;
-}
-
-h2 {
-  font-size: 1.8rem;
-  color: #6a4c9c;
-  margin-bottom: 10px;
-}
-
-.semester {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  text-align: center;
+  color: #6a1b9a;
   margin-bottom: 30px;
 }
 
-.course {
-  background-color: #e8d1f9;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  width: 200px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ramo {
+  background-color: #e1bee7;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #ab47bc;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: background-color 0.3s, transform 0.2s;
+  position: relative;
+  font-size: 14px;
 }
 
-.course:hover {
-  background-color: #8e4bb6;
-  transform: scale(1.05);
-  color: white;
+.ramo:hover {
+  background-color: #ce93d8;
+  transform: scale(1.03);
 }
 
-.course.approved {
-  background-color: #6a4c9c;
-  color: white;
+.ramo.aprobado {
+  background-color: #c8e6c9;
+  border-color: #66bb6a;
+  color: #2e7d32;
 }
 
-.course:active {
-  background-color: #8e4bb6;
-  transform: scale(0.98);
+.ramo.bloqueado {
+  background-color: #f3e5f5;
+  border-color: #d1c4e9;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.ramo h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.ramo p {
+  margin: 0;
+  font-size: 13px;
 }
