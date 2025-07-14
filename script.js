@@ -10,3 +10,4 @@ function toggleCourse(courseId, prerequisites) {
   }
 }
 
+<script src="script.js"></script>
